@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 @AllArgsConstructor
 public class StudentController {
 
-    private StudentService service;
+    public StudentService service;
 
     @PostMapping
     public ResponseEntity<Student> postStudent(@RequestBody Student student) {

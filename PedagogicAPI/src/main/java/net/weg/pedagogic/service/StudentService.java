@@ -13,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 public class StudentService {
 
-    private StudentRepository repository;
+    public StudentRepository repository;
 
     public Student createStudent (Student student) {
         return repository.save(student);
